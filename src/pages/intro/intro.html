@@ -5,26 +5,43 @@
   Ionic pages and navigation.
 -->
 
-  <ion-navbar>
-    <ion-title>intro</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
+<ion-content padding="true">
   <ion-slides pager>
 
-    <ion-slide style="background-color: green">
-      <h2>Slide 1</h2>
+    <ion-slide class="slide_image">
+      <img src="assets/imgs/slide1.png" alt=""/>
+      <h2>Bem vindo ao meu App!</h2>
+      <br>
+      <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam pulvinar tellus, vel vehicula mauris posuere varius. 
+        </p>
+        <p>Ficou curioso? <strong>Veja mais</strong></p>
+      </div>
     </ion-slide>
 
-    <ion-slide style="background-color: blue">
-      <h2>Slide 2</h2>
+    <ion-slide class="slide_image">
+        <img src="assets/imgs/slide2.png" alt=""/>
+      <h2>Programador padawan</h2>
+      <br>
+      <div>
+        <p>Nullam tortor tellus, scelerisque eget dignissim a, elementum semper leo.</p>
+        <p>Quisque rutrum lacus ante, nec aliquam erat feugiat non. Nulla ex urna, eleifend ut turpis ut, placerat congue felis. 
+          <br>
+          <strong>>></strong></p>
+      </div>
     </ion-slide>
 
-    <ion-slide style="background-color: red">
-      <h2>Slide 3</h2>
+    <ion-slide class="slide_image">
+        <img src="assets/imgs/slide3.png" alt=""/>
+      <h2>Explore</h2>
+      <br>
+      <div>
+        <p>
+            Integer blandit elit vel magna volutpat, vitae congue metus porta. Aenean facilisis lacus laoreet, elementum est quis, sodales tortor.
+        </p>
+        <a (click)="goTabsPage()">Continuar</a>
+      </div>
     </ion-slide>
 
   </ion-slides>
